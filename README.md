@@ -158,3 +158,11 @@ python3 tracker.py [-h] -f LOG_FILE -H HOST -u USER [-p PASSWORD] -P PORT -s SCH
   -v, --verbose         verbose execution (default: False)
   -n, --no-views        do not create the database views (default: False)
 ```
+
+### Example
+
+In this example, the tool will parse the log `tests/data/retry.log` only once and store the data in the database running in the localhost. 
+
+```
+python3 source/tracker.py --host localhost --port 3306 --user myuser --password mypass --schema test --log-file tests/data/retry.log --verbose --run-once
+```
