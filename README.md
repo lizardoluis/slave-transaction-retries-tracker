@@ -92,7 +92,7 @@ CREATE VIEW IF NOT EXISTS retries_per_error AS
 │ retry_reason │ number_of_retries │
 ├──────────────┼───────────────────┤
 │ 1205         │ 9                 │
-│ 4311         │ 1                 │
+│ 1213         │ 1                 │
 └──────────────┴───────────────────┘
 ```
 
