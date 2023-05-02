@@ -32,13 +32,13 @@ The log have the following format of entries:
 The data collected are: 
 ```
 1. 2023-04-20 13:07:49  timestamp
-2. [T22]		        thread ID
+2. [T24]		        thread ID
 3. [R1]		            retry number
 4. event: 2 of 2	    failed event and the number of events in group to retry
 5. log_pos: 1663	    log_pos in master binlog
 6. GTID: 2-1-2	        GTID
 7. query_id: 327	    Query ID
-8. reason: 1213	        retry reason (failed event error code)
+8. reason: 1205	        retry reason (failed event error code)
 ```
 
 ## Database
