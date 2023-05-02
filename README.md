@@ -118,18 +118,18 @@ CREATE VIEW IF NOT EXISTS retries_per_time_of_day AS
 └──────────────────┴───────────────────┘
 ```
 
+## Requirements
 
-## Usage
+- Python 3.10
+- MariaDB Server
 
-The tool was written in python and requires python3 for execution. 
-
-Requirements can be installed with:
+Required Python libraries can be installed with the command:
 
 ```
 python3 -m python3 -m pip install -r requirements.txt 
 ```
 
-The tool can be executed with the following command:
+## Usage
 
 ```
 python3 tracker.py [-h] -f LOG_FILE -H HOST -u USER [-p PASSWORD] -P PORT -s SCHEMA [-t TABLE] [-i PARSING_INTERVAL] [-b] [-r] [-T] [-v]
@@ -159,9 +159,9 @@ python3 tracker.py [-h] -f LOG_FILE -H HOST -u USER [-p PASSWORD] -P PORT -s SCH
   -n, --no-views        do not create the database views (default: False)
 ```
 
-### Example
+## Example
 
-In this example, the tool will parse the log `tests/data/retry.log` only once and store the data in the database running in the localhost. 
+In the following example, the tool will parse the log `tests/data/retry.log` only once and store the data in the database running in the localhost. 
 
 ```
 python3 source/tracker.py --host localhost --port 3306 --user myuser --password mypass --schema test --log-file tests/data/retry.log --verbose --run-once
