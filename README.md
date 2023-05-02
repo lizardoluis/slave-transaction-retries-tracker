@@ -132,7 +132,7 @@ python3 -m python3 -m pip install -r requirements.txt
 ## Usage
 
 ```
-python3 tracker.py [-h] -f LOG_FILE -H HOST -u USER [-p PASSWORD] -P PORT -s SCHEMA [-t TABLE] [-i PARSING_INTERVAL] [-b] [-r] [-T] [-v]
+python3 source/tracker.py [-h] -f LOG_FILE -H HOST -u USER [-p PASSWORD] -P PORT -s SCHEMA [-t TABLE] [-i PARSING_INTERVAL] [-b] [-r] [-T] [-v]
 ```
 
 ### Options:
