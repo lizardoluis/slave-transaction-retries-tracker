@@ -121,7 +121,7 @@ CREATE VIEW IF NOT EXISTS retries_per_time_of_day AS
 ## Requirements
 
 - Python 3.10
-- MariaDB Server
+- MariaDB Samurai with [SAMU-124](https://github.com/mariadb-corporation/mariadb-samurai/commit/3a06c645e6f27fae7e746e83dc93e98164a781c7) with the configuration parameter `log_slave_retries` set in the configuration file. 
 
 Required Python libraries can be installed with the command:
 
